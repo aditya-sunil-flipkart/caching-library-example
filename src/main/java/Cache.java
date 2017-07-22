@@ -44,7 +44,7 @@ public class Cache {
     public void add(Object key,Object value){
             String keyString = key.toString();
             String valueString = value.toString();
-            dataStore.put(keyString,valueString);
+            add(keyString,valueString);
     }   //TODO can use objectMapper to serialize
 
     public String get(String key) {
